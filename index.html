@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrita Jodha | Portfolio</title>
+  <style>
+    /* General Styling */
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: linear-gradient(135deg, #6a11cb, #2575fc); color: white; text-align: center; padding: 80px 20px; }
+    header h1 { font-size: 2.5rem; margin: 0; }
+    header p { font-size: 1.2rem; margin-top: 10px; }
+    nav { background: #fff; padding: 10px 20px; position: sticky; top: 0; border-bottom: 1px solid #ddd; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; }
+    nav a:hover { color: #2575fc; }
+    section { max-width: 900px; margin: auto; padding: 60px 20px; }
+    h2 { color: #2575fc; margin-bottom: 20px; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 10px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    footer { background: #2575fc; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    a.button { display: inline-block; background: #2575fc; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-top: 10px; }
+    a.button:hover { background: #6a11cb; }
+
+    /* Game Section */
+    #game h2 { text-align: center; margin-bottom: 20px; }
+    canvas { border: 2px solid #333; display: block; margin: auto; background: #eef; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>🌟 Amrita Jodha</h1>
+    <p>Class 11 Commerce Student | Aspiring Chartered Accountant</p>
+    <a href="https://www.linkedin.com/in/amrita-jodha-228ab5380" class="button" target="_blank">Connect on LinkedIn</a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#interests">Interests</a>
+    <a href="#game">Game</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>👩 About Me</h2>
+    <p>I am Amrita Jodha, a motivated Class 11 Commerce student at St. Austin Sr. Sec. School, Jodhpur. My ambition is to become a Chartered Accountant (CA) and excel in the field of finance. I am passionate about innovation, learning, and contributing to impactful projects that combine education and technology.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <div class="card">
+      <h3>St. Austin Sr. Sec. School, Jodhpur</h3>
+      <p><strong>Course:</strong> Class 11 Commerce | Business/Commerce, General</p>
+      <p><strong>Duration:</strong> Aug 2025 – Present</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h4>📘 Academic Skills</h4>
+        <ul>
+          <li>Business & Commerce Fundamentals</li>
+          <li>Case Studies</li>
+          <li>Accounting Principles</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>💻 Technical Skills</h4>
+        <ul>
+          <li>Digital Tools for Learning</li>
+          <li>AI Awareness & Basics</li>
+          <li>Presentation & Documentation (Notion, MS Office, Overleaf)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>🤝 Soft Skills</h4>
+        <ul>
+          <li>Communication</li>
+          <li>Teamwork & Collaboration</li>
+          <li>Problem-Solving</li>
+          <li>Leadership in Group Projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li><strong>Impact Ideathon 2025</strong> – Proposed AI-driven solutions for real-world problems.</li>
+      <li><strong>Robotics (Gamma Project)</strong> – Created robotics presentation showcasing innovation (via Gamma).</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>💼 Experience & Activities</h2>
+    <ul>
+      <li><strong>AI Awareness Workshop</strong> – Introduction program to Artificial Intelligence at SIN School of AI.</li>
+      <li><strong>Digital Skills Foundation Program</strong> – Completed program under Microsoft Learn Student Ambassador initiative.</li>
+      <li><strong>Commerce Quiz Competition</strong> – Enhanced subject knowledge via inter-school quiz.</li>
+    </ul>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>📜 Certificates</h2>
+    <ul>
+      <li>Impact Ideathon 2025 – Certificate of Participation</li>
+      <li>AI Awareness Workshop – Certificate of Completion</li>
+      <li>Digital Skills Foundation Program – Certificate of Completion</li>
+      <li>Commerce Quiz (School Level) – Participation Certificate</li>
+      <li>Certificate of Achievement</li>
+    </ul>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests">
+    <h2>🎯 Interests & Passions</h2>
+    <ul>
+      <li>Finance & Accounting</li>
+      <li>Artificial Intelligence & Digital Learning</li>
+      <li>Innovation Challenges & Ideathons</li>
+      <li>Reading Business Case Studies</li>
+      <li>Exploring Technology for Education</li>
+    </ul>
+  </section>
+
+  <!-- Game Section -->
+  <section id="game">
+    <h2>🎮 Ninja Hattori Game</h2>
+    <canvas id="ninjaGame" width="600" height="400"></canvas>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Amrita Jodha | Made with ❤️ and ambition | Thank You!</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('ninjaGame');
+    const ctx = canvas.getContext('2d');
+
+    let ninja = { x: 50, y: 350, width: 40, height: 40, dy: 0, gravity: 1, jumpPower: -15 };
+    let obstacles = [];
+    let score = 0;
+    let gameOver = false;
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' && ninja.y === 350) {
+        ninja.dy = ninja.jumpPower;
+      }
+    });
+
+    function drawNinja() {
+      ctx.fillStyle = '#0077ff';
+      ctx.fillRect(ninja.x, ninja.y, ninja.width, ninja.height);
+    }
+
+    function drawObstacles() {
+      ctx.fillStyle = '#ff0000';
+      obstacles.forEach(obs => ctx.fillRect(obs.x, obs.y, obs.width, obs.height));
+    }
+
+    function spawnObstacle() {
+      if (Math.random() < 0.02) obstacles.push({ x: canvas.width, y: 350, width: 30, height: 40 });
+    }
+
+    function updateObstacles() {
+      obstacles.forEach((obs, index) => {
+        obs.x -= 5;
+        if (obs.x + obs.width < 0) obstacles.splice(index, 1);
+
+        if (ninja.x < obs.x + obs.width &&
+            ninja.x + ninja.width > obs.x &&
+            ninja.y < obs.y + obs.height &&
+            ninja.y + ninja.height > obs.y) gameOver = true;
+      });
+    }
+
+    function drawScore() {
+      ctx.fillStyle = '#000';
+      ctx.font = '20px Arial';
+      ctx.fillText('Score: ' + score, 10, 30);
+    }
+
+    function updateNinja() {
+      ninja.dy += ninja.gravity;
+      ninja.y += ninja.dy;
+      if (ninja.y > 350) { ninja.y = 350; ninja.dy = 0; }
+    }
+
+    function gameLoop() {
+      if (gameOver) {
+        ctx.fillStyle = 'rgba(0,0,0,0.5)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#fff';
+        ctx.font = '40px Arial';
+        ctx.fillText('Game Over!', 180, 200);
+        ctx.font = '20px Arial';
+        ctx.fillText('Refresh to play again', 200, 240);
+        return;
+      }
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      spawnObstacle();
+      updateObstacles();
+      updateNinja();
+      drawNinja();
+      drawObstacles();
+      drawScore();
+      score++;
+      requestAnimationFrame(gameLoop);
+    }
+
+    gameLoop();
+  </script>
+</body>
+</html>
